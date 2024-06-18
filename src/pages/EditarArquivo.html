@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Arquivo</title>
+</head>
+<body>
+    <form action="/submit" method="post" enctype="multipart/form-data">
+        <!-- Caixa de Descrição -->
+        <h1>Editar Arquivo</h1>
+        <label for="descricao">Descrição:</label><br>
+        <textarea id="descricao" name="descricao" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Caixa para Relacionar Arquivo a um Contrato -->
+        <label for="arquivo">Relacionar arquivo a um contrato:</label><br>
+        <textarea id="contrato" name="contrato" rows="2" cols="50"></textarea><br><br>
+
+        <!-- Opções de Marcar Caixa -->
+        
+            <legend>Tipo de Arquivo:</legend>
+            <input type="checkbox" id="confis" name="tipo_arquivo" value="confis">
+            <label for="confis">Arquivo pertencente ao CONFIS</label><br>
+
+            <input type="checkbox" id="conad" name="tipo_arquivo" value="conad">
+            <label for="conad">Arquivo pertencente ao CONAD</label><br>
+
+            <input type="checkbox" id="contec" name="tipo_arquivo" value="contec">
+            <label for="contec">Arquivo pertencente ao CONTEC</label><br>
+        
+
+        <!-- Selecionar um dos 12 Meses do Ano -->
+        <label for="mes">Selecionar mês:</label><br>
+        <select id="mes" name="mes">
+            <option value="janeiro">Janeiro</option>
+            <option value="fevereiro">Fevereiro</option>
+            <option value="marco">Março</option>
+            <option value="abril">Abril</option>
+            <option value="maio">Maio</option>
+            <option value="junho">Junho</option>
+            <option value="julho">Julho</option>
+            <option value="agosto">Agosto</option>
+            <option value="setembro">Setembro</option>
+            <option value="outubro">Outubro</option>
+            <option value="novembro">Novembro</option>
+            <option value="dezembro">Dezembro</option>
+        </select><br><br>
+        
+        
+        <!-- Selecionar um dos Anos -->
+        <label for="mes">Selecionar Ano:</label><br>
+        <select id="mes" name="mes">
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+        </select><br><br>
+
+        <!-- Botão de Submissão -->
+        <input type="submit" value="Atualizar">
+    </form>
+</body>
+</html>
